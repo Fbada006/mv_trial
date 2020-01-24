@@ -34,11 +34,6 @@ nav#nav-bar li {
     color: black;
 }
 
-nav,
-#header-image {
-    /* position: relative; */
-}
-
 main {
     max-width: 800px;
     position: absolute;
@@ -49,4 +44,28 @@ main {
 
 form#form {
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 630px) {
+    .nav-link {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav#nav-bar {
+        top: 10vh;
+        transform: translateX(-50%);
+    }
+    .nav-link {
+        margin-right: 10px;
+    }
+    #header-image {
+        width: 100%;
+    }
+    main {
+        transform: translateX(-50%);
+        margin: 20px;
+        padding: 20px;
+    }
 }
